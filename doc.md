@@ -4,7 +4,7 @@
 ### Получить пользователя по GUID
 
 * Запрос
-```http request
+```
 https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_WEB_SITES]={{GUID}}
 ```
 ```{{GUID}}``` - GUID пользователя в 1C
@@ -24,8 +24,7 @@ https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_WEB_
         "LAST_NAME": "Last Name",
         "SECOND_NAME": "",
         "TITLE": "",
-        "EMAIL": "email@gmail.com",
-        //...
+        "EMAIL": "email@gmail.com"
       }
     ]
 }
