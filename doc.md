@@ -6,7 +6,7 @@
 * Запрос
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_WEB_SITES]={{GUID}}
+GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_USR_1722587885970]={{GUID}}
 ```
 
 ```{{GUID}}``` - GUID пользователя в 1C
