@@ -4,7 +4,7 @@
 ### Получить пользователя по GUID
 
 * Запрос
-* 
+
 ```http request
 GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_WEB_SITES]={{GUID}}
 ```
