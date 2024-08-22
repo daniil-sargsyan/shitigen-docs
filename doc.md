@@ -6,7 +6,7 @@
 * Запрос
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_USR_1722587885970]={{GUID}}
+GET {{API URL}}/user.get?filter[UF_USR_1722587885970]={{GUID}}
 ```
 
 ```{{GUID}}``` - GUID пользователя в 1C
@@ -42,7 +42,7 @@ GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/user.get?filter[UF_
 * Запрос
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.add
+POST {{API_URL}}/crm.contact.add
 ```
 
 ```json
@@ -97,7 +97,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.add
 ```UF_CRM_1707822426950``` Երբ է տրվել (дата в формате 2024-08-08T14:05:21+04:00) <br>
 ```UF_CRM_1707822448806``` Ում կողմից <br>
 ```UF_CRM_1707822458574``` ՀԾՀ <br>
-```UF_CRM_1707822731302``` Բանկ (варианты можно получить сделав запрос https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.fields) <br>
+```UF_CRM_1707822731302``` Բանկ (варианты можно получить сделав запрос {{API_URL}}/crm.contact.fields) <br>
 ```UF_CRM_1707822585830```: Հ/Հ <br>
 ```COMPANY``` Կազմակերպություն (массив с id компаний) <br>
 ```TYPE_ID``` Կոնտակտի տեսակ (возможные варианты "CLIENT" - Հաճախորդ, "UC_JVEYP2" - Կոնտակտային անձ, "UC_DIUN9M" - Դիմորդ, "UC_KKSTDO" - Այլ, "" - Не Выбран) <br>
@@ -129,7 +129,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.add
 ### Удалить контакт
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.delete?ID={{ID}}
+GET {{API_URL}}/crm.contact.delete?ID={{ID}}
 ```
 
 ```{{ID}}``` - id контакта 
@@ -139,7 +139,7 @@ GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.delete?
 * Запрос 
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.update?ID={{ID}}
+POST {{API_URL}}/crm.contact.update?ID={{ID}}
 ```
 
 ```{{ID}}``` - id контакта
@@ -213,7 +213,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.update
 Запрос
 
 Во всех множественных полях по типу PHONE, EMAIL нужно добавлять ID если если нужно изменить конкретный элемент, если нет ID то добавится новый элемент.
-чтобы получить их нужно сделать запрос https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.get?ID={{ID}} где {{ID}} это id контакта
+чтобы получить их нужно сделать запрос {{API_URL}}/crm.contact.get?ID={{ID}} где {{ID}} это id контакта
 
 Ответ
 
@@ -228,7 +228,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.update
 * Запрос
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.add
+POST {{API_URL}}/crm.company.add
 ```
 
 ```json
@@ -270,7 +270,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.add
 ```UF_CRM_1721896430796``` Իրավաբանական հասցե <br>
 ```UF_CRM_1721896453819``` Գործունեության  հասցե <br>
 ```UF_CRM_1707823114526``` ՀՎՀՀ <br>
-```UF_CRM_1707823136855```: Բանկ (варианты можно получить сделав запрос https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.contact.fields) <br>
+```UF_CRM_1707823136855```: Բանկ (варианты можно получить сделав запрос {{API_URL}}/crm.contact.fields) <br>
 ```UF_CRM_1707823142254``` Հ/Հ <br>
 ```UF_CRM_664DBFBD53217```: Կայանի տեղադրման հասցե  <br>
 ```CONTACT``` Contact (id контакта) <br>
@@ -301,7 +301,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.add
 ### Удалить компанию 
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.delete?ID={{ID}}
+GET {{API_URL}}/crm.company.delete?ID={{ID}}
 ```
 
 ```{{ID}}``` - id компании
@@ -310,7 +310,7 @@ GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.delete?
 ### Обновить компанию
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.update?ID={{ID}}
+POST {{API_URL}}/crm.company.update?ID={{ID}}
 ```
 ```{{ID}}``` - id компании
 
@@ -366,7 +366,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.update
 Запрос
 
 Во всех множественных полях по типу PHONE, EMAIL нужно добавлять ID если нужно изменить конкретный элемент, если нет ID то добавится новый элемент.
-чтобы получить их нужно сделать запрос https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.get?ID={{ID}} где {{ID}} это id контакта
+чтобы получить их нужно сделать запрос {{API_URL}}/crm.company.get?ID={{ID}} где {{ID}} это id контакта
 
 Ответ
 
@@ -381,7 +381,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.company.update
 * Запрос
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.add
+POST {{API_URL}}/crm.deal.add
 ```
 
 ```json
@@ -678,7 +678,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.add
 
 * Комментарии
 ```
-Чтобы получить возможные значения полей list сделайте запрос https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.fields
+Чтобы получить возможные значения полей list сделайте запрос {{API_URL}}/crm.deal.fields
 ```
 
 
@@ -703,7 +703,7 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.add
 * Запрос
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.delete?id={{ID}}
+GET {{API_URL}}/crm.deal.delete?id={{ID}}
 ```
 ```{{ID}}``` - id сделки
 
@@ -712,7 +712,7 @@ GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.delete?id=
 * Запрос
 
 ```http request
-POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.update?id={{ID}}
+POST {{API_URL}}/crm.deal.update?id={{ID}}
 ```
 ```{{ID}}``` - id сделки
 
@@ -726,6 +726,6 @@ POST https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.update?id
 * Запрос
 
 ```http request
-GET https://www.shtigen-group.com/rest/1675/asukkakqg9mc3xpz/crm.deal.get?id={{ID}}
+GET {{API_URL}}/crm.deal.get?id={{ID}}
 ```
 ```{{ID}}``` - id сделки
